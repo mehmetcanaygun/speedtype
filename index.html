@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Speed Type</title>
+    <title>Speeype</title>
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      href="https://fonts.googleapis.com/css?family=Varela+Round|Luckiest+Guy"
       rel="stylesheet"
     />
 
@@ -24,6 +24,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="header">
+      <i class="far fa-keyboard"></i>Spee<span class="greenSpan"
+        >ype<i class="fas fa-bolt"></i
+      ></span>
+    </div>
+    <div class="container center">
+      <div id="info">Type Each Word In 3 Seconds!</div>
+      <div id="random-word-box">Random Word</div>
+      <div id="player-input-box">
+        <input id="player-input" type="text" onkeyup="getWord()" />
+      </div>
+      <div id="game-play-info">
+        <div id="time-left-box">Time: <span class="greenSpan">3</span></div>
+        <div id="score-box">Score: <span class="greenSpan">0</span></div>
+        <br style="clear:both;" />
+      </div>
+      <div id="end-game-table">
+        <div id="score-board"></div>
+        <div id="play-again">
+          <input id="play-btn" type="button" value="PLAY" />
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
